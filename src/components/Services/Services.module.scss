@@ -1,0 +1,78 @@
+.Services {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    .Service {
+        width: 100%;
+        
+        padding: 2.5em 0;
+
+        margin: 0.5em 0;
+
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Wrapper {
+            width: 85%;
+            height: 90%;
+
+            .Name {
+                font-size: 1.75em;
+                font-weight: 300;
+                text-transform: capitalize;
+
+                margin-bottom: 1em;
+            }
+            
+            .Description {
+                width: 95%;
+
+                font-size: 0.9em;
+                font-weight: 300;
+                line-height: 1.5em;
+
+                margin-bottom: 1.5em;
+            }
+
+            .Price {
+                font-weight: 300;
+
+                color: #DE9B00;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Services {
+        flex-flow: row;
+        flex-wrap: wrap;
+
+        .Service {
+            flex: 0 1;
+
+            min-width: 20em;
+            margin: 1em;
+
+            transition: 0.3s;
+            
+            &:hover {
+                transform: scale(1.025);
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Services {
+        width: 66em;
+        margin: 0 auto;
+    }
+}

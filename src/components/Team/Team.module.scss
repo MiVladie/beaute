@@ -1,0 +1,94 @@
+.Team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    .Member {
+        width: 100%;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+
+        margin: 1em 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Wrapper {
+            width: 90%;
+            height: 85%;
+
+            margin: 3em 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            .Image {
+                width: 8em;
+                height: 8em;
+
+                margin-bottom: 2.5em;
+
+                border-radius: 50%;
+
+                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .Name {
+                font-size: 1.35em;
+                font-weight: 300;
+
+                text-transform: uppercase;
+
+                margin-bottom: 1.5em;
+            }
+
+            .Type {
+                color: #DE9B00;
+                margin-bottom: 2em;
+            }
+
+            .Description {
+                font-size: 0.9em;
+                font-weight: 300;
+
+                text-align: center;
+                line-height: 1.65em;
+
+                width: 70%;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Team {
+        flex-flow: row;
+        flex-wrap: wrap;
+
+        .Member {   
+            min-width: 20em;    
+            margin: 1em;  
+            flex: 0 1;
+
+            transition: 0.3s;
+            
+            &:hover {
+                transform: scale(1.025);
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Team {
+        .Member {   
+            font-size: 1vw;
+        }
+    }
+}

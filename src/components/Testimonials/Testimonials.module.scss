@@ -1,0 +1,89 @@
+.Testimonials {
+    width: 100%;
+    min-height: 40vh;
+
+    background-color: #F5F5F5;
+
+    padding: 2em 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Wrapper {
+        width: 85%;
+        height: 90%;
+
+        .Symbol {
+            font-size: 1.875em;
+            color: #DE9B00;
+        }
+
+        .Text {
+            font-size: 0.9em;
+            font-weight: 300;
+            line-height: 1.65em;
+            margin-bottom: 1.5em;
+        }
+
+        .Person {
+            font-size: 1.35em;
+            font-weight: 300;
+            margin-bottom: 0.5em;
+        }
+
+        .Type {
+            font-size: 0.9em;
+            font-weight: 300;
+            color: #DE9B00;
+            margin-bottom: 1.35em;
+        }
+
+        .Switch {
+            display: flex;
+
+            .Quote {
+                width: 0.75em;
+                height: 0.75em;
+                background-color: #4B4B4B;
+                margin-right: 0.5em;
+
+                cursor: pointer;
+            }
+
+            .Active {
+                background-color: #DE9B00;
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Testimonials {
+        .Wrapper {
+            font-size: 1.35em;
+
+            .Text {
+                min-height: 10vh;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Testimonials {
+        padding: 4em 0;
+        justify-content: left;
+
+        .Wrapper {
+            font-size: 1.35em;
+
+            width: 60%;
+            margin-left: 5em;
+
+            .Text {
+                min-height: 10vh;
+            }
+        }
+    }
+}
